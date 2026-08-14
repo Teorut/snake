@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Snake</title>
+
+    <link href="snake.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <div id="menuDiv">
+        <div id="selectDiv">
+          <div> <span>Nivå:</span>
+            <select id="levelSelector">
+              <option value="1">Default</option>
+              <option value="2">Hinder</option>
+              <option value="3">Mat försvinner</option>
+              <option value="4">Rörliga hinder</option>
+            </select>
+          </div>
+  
+          <div> <span>Skin:</span>
+            <select id="skinSelector">
+              <option value="1">Classic</option>
+              <option value="2">Modern</option>
+              <option value="3">Rainbow</option>
+              <option value="4">The Good One</option>
+              <option value="5">Edgy The Hedgy</option>
+              <option value="6">La Patria</option>
+              <option value="7">Svenne Banan</option>
+            </select>
+          </div>
+        </div>
+        
+        <p id="titleCard">Snake</p>
+        
+        <div id="settingsDiv">
+          <div id="twoPlayerDiv">Two Player: <input type="button" class="btnInp" id="twoPlayerBtn" value="Off" onclick="toggleTwoPlayer()"></div>
+          <div id="foodAmountDiv">Food Amount: <input class="numInp" type="number" id="foodAmountInput" value="2"></div>
+          <div id="gridWidthDiv">Grid Width: <input class="numInp" type="number" id="gridWidthInput" value="34"></div>
+          <div id="gridHeightDiv">Grid Height: <input class="numInp" type="number" id="gridHeightInput" value="18"></div>
+          <div id="gridHeightDiv">Cell Size: <input class="numInp" type="number" id="cellSizeInput" value="20"></div>
+          <div id="speedDiv">Speed: <input class="numInp" type="number" id="speedInput" value="10"></div>
+          <div id="changeSpeedDiv">Increase Speed: <input type="button"class="btnInp" id="changeSpeedBtn" value="Off" onclick="toggleChangeSpeed()"></div>
+          <div id="speedDiv">Starting Length: <input class="numInp" type="number" id="lengthInput" value="1"></div>
+          <div id="blockAmountDiv">Block Amount: <input class="numInp" type="number" id="blockAmountInput" value="10"></div>
+        </div>
+
+        <button class="optionBtn" id="showSettingsBtn"  onclick="toggleSettings('none', 'inline', 'flex')">Settings</button>
+
+        <button class="optionBtn" id="startGameBtn" onclick="startGame()" >Start Game</button>
+
+        <button class="optionBtn" id="hideSettingsBtn" onclick="toggleSettings('', 'none', 'none')">Save and exit</button>
+      </div>
+      <div id="gameDiv">
+        <canvas id="canvas" width="850px" height="450px"></canvas>
+
+        <br>
+
+        <button class="optionBtn" id="toggleBtn" onclick="toggleRunning()">Start</button>
+
+        <button class="optionBtn" id="exitGameBtn" onclick="endGame(null)">Exit Game</button>
+      </div>
+
+      <div id="scoreDiv">
+        <p id="score1"></p>
+        <p id="score2"></p>
+      </div>
+    </main>
+
+    <div id="gameInfo"></div>
+
+    <script src="snake.js"></script>
+  </body>
+</html>

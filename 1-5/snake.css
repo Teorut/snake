@@ -1,0 +1,20 @@
+main {
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#scoreDiv {
+  position: absolute;
+  right: 0;
+}
+
+#settingsDiv {
+  position: absolute;
+}
+
+#settingsDiv input {
+  width: 40px;
+}

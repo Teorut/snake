@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Snake</title>
+
+    <link href="snake.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="scoreDiv">Score: 0</div>
+
+    <select id="levelSelector">
+      <option value="1">Nivå 1</option>
+      <option value="2">Nivå 2</option>
+      <option value="3">Nivå 3</option>
+      <option value="4">Nivå 4</option>
+    </select>
+    
+    <div id="settingsDiv">
+      <div id="foodAmountDiv">Food Amount: <input type="number" id="foodAmountInput"></div>
+      <div id="gridWidthDiv">Grid Width: <input type="number" id="gridWidthInput"></div>
+      <div id="gridHeightDiv">Grid Height: <input type="number" id="gridHeightInput"></div>
+      <div id="speedDiv">Speed: <input type="number" id="speedInput"></div>
+      <div id="speedDiv">Starting Length: <input type="number" id="lengthInput"></div>
+    </div>
+
+    <main>
+      <canvas id="canvas" width="850px" height="450px"></canvas>
+      <br>
+      <button onclick="toggleGame()" id="toggleBtn">Start</button>
+      <button onclick="newGame()" id="newGameBtn">New Game</button>
+    </main>
+
+    <script src="snake.js"></script>
+  </body>
+</html>

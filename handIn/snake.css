@@ -1,0 +1,148 @@
+body {
+  background-image: url("snakeHead.png");
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+canvas {
+  border: 5px solid black;
+}
+
+.optionBtn {
+  min-width: 15vw;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+.optionBtn:hover {
+  background-color: rgb(128, 207, 128);
+  cursor: pointer;
+}
+
+#menuDiv {
+  width: inherit;
+}
+
+#menuDiv > button {
+  height: 18vh;
+  font-size: 2em;
+}
+
+#gameDiv {
+  display: none;
+}
+
+#gameDiv button {
+  height: 9vh;
+  font-size: 1.5em;
+}
+
+#scoreDiv {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  display: flex;
+  width: 40vw;
+}
+
+#scoreDiv p {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#titleCard {
+  color: white;
+  font-size: 6em;
+  height: 16vh;
+  margin-top: 6vh;
+}
+
+#settingsDiv {
+  display: none;
+  margin: 0 30% 3vh;
+  border-radius: 15px;
+  width: 40%;
+  height: 40vh;
+  background-color: lightgreen;
+  text-align: left;
+  padding: 2vh;
+  flex-direction: column;
+  overflow: auto;
+  justify-content: space-evenly;
+}
+
+#settingsDiv div {
+  font-size: 2em;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numInp {
+  width: 80px;
+  background-color: green;
+  border: 2px solid darkgreen;
+}
+
+.btnInp {
+  width: 88px;
+  padding: 1px 2px;
+  background-color: green;
+  border: 2px solid darkgreen; 
+  font-size: 0.6em;
+}
+
+#hideSettingsBtn {
+  display: none;
+}
+
+#selectDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 0;
+}
+
+#selectDiv div {
+  background-color: green;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#selectDiv span {
+  font-size: 3em;
+}
+
+select {
+  background-color: lightgreen;
+  border: none;
+  padding: 3vh 0.5vw;
+  border-radius: 10px;
+  font-size: 2em;
+}
+
+select:hover {
+  background-color: rgb(128, 207, 128);
+  cursor: pointer;
+}
+
+#gameInfo {
+  text-align: center;
+  position: absolute;
+  top: 43vh;
+  left: 41vw;
+  font-size: 2em;
+  width: 18vw;
+  background-color: lightgreen;
+  border-radius: 10px;
+  line-height: 1.5em;
+}
